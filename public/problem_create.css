@@ -1,0 +1,57 @@
+body{
+
+    background-color: rgb(46, 33, 157);
+    
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+.compose{
+    text-align: center;
+    font-size: 40px;
+    
+    color: rgb(12, 3, 60);
+    margin: 10px;
+}
+form{
+    margin: 0% 10%;
+    padding: 10px;
+    background-color: rgb(29, 214, 187);
+}
+
+input{
+    text-align: center;
+    width: 50%;
+}
+div{
+    text-align: center;
+}
+#problem{
+    background-color: rgb(90, 172, 77);
+    border-radius: 20px;
+    padding: 20px;
+    resize: none;
+    width: 90%;
+    color: white;
+}
+#submit{
+    background-color: rgb(124, 194, 26);
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 35px;
+    /* padding-bottom: 1%; */
+}
+#title{
+    width: 90%;
+    padding: 10px;
+}
+
+p{
+    padding-top: 5px;
+    font-size: 30px;
+    font-style: oblique;
+    text-align: center;
+}

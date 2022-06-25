@@ -1,0 +1,68 @@
+<%- include('partials/header') %>
+
+    <head>
+        <link rel="stylesheet" href="/blog.css">
+    </head>
+
+    <div style="color: red;">
+
+        <form action="/tag" method="post">
+            
+            <Button style="margin: 100px 20px 0px 90%; " type="submit">Apply tag</Button>
+
+            <% if(isLoggedIn) {%>
+        
+            <h1 style="text-align:center">All
+                <%= user+"'s " %>tags
+            </h1>
+            <div class=" container">
+                        <div class="row">
+                            <% for(let i in user_tag){ %>
+                                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+
+                                    <div class="card" style="margin: 10px;">
+
+                                        <div class="card-body">
+                                            <input style="margin-right: 15px;" type="checkbox" name="checkbox" value="<%= user_tag[i] %>">
+                                            <h4 style="display:inline-block ;" class="card-title">
+                                                <%= user_tag[i] %>
+                                            </h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <% } %>
+                        </div>
+
+        </div>
+        <h1 style="color: red; margin-top:100px; text-align:center">Default tags
+        </h1>
+        <% } else {%>
+            <h1 style="color: red; margin-top:100px; text-align:center">All tags
+            </h1>
+            
+        <% } %>
+        <div class="container">
+            <div class="row">
+                <% for(let i in tag){ %>
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+
+
+
+                        <div class="card" style="margin: 10px;">
+
+                            <div class="card-body">
+                                <input style="margin-right: 15px;" type="checkbox" name="checkbox" value="<%= tag[i] %>">
+                                <h4 style="display:inline-block ;" class="card-title">
+                                    <%= tag[i] %>
+                                </h4>
+                            </div>
+
+                        </div>
+                    </div>
+                    <% } %>
+            </div>
+
+        </div>
+    </form>
+    </div>

@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: red;
+}
+
+.navbar {
+    width: 100%;
+    background-color: rgb(29, 214, 187);
+    overflow: auto;
+    margin-bottom: 200px;
+    margin-bottom: 20px;
+}
+
+/* Navigation links */
+.navbar a {
+    /* margin: 10px; */
+    float: left;
+    padding: 10px;
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+    /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+    text-align: center;
+    /* If you want the text to be centered */
+}
+
+.navbar a:hover {
+    background-color: blue;
+    border-radius: 10px;
+}
+
